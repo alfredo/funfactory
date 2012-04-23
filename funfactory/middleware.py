@@ -20,6 +20,8 @@ class LocaleURLMiddleware(object):
     1. Search for the locale.
     2. Save it in the request.
     3. Strip them from the URL.
+    Use ``SUPPORTED_NONLOCALES`` for paths that don't require a locale
+    code in the URL.
     """
 
     def process_request(self, request):
